@@ -1,47 +1,83 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Café</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- menu do site -->
-    <nav>
-        <header>
-           <div class="container">
-                <div class="logo">
-                    <img src="images/logo.jfif" alt="">
-                </div>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-                <div class="nome"> 
-                    <img src="images/nome_cafeteri-removebg-preview.png" alt="">
-                </div>
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/fundo2.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto; /* Mantém a largura total, ajustando a altura proporcionalmente */
+    min-height: 10vh; /* Garante que o corpo tenha pelo menos a altura da tela */
+    background-position: center; 
+}
+.container{
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "Playfair Display", serif;
+}
+.logo img{
+    width: 100px;
+    border-radius: 50px;
+}
+.nome img{
+    width: 200px;
+    
+}
+.menu{
+    width: 50%;
+    margin-left: 600px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(180, 81, 0);
+    display: flex;
+}
 
-                <div class="menu">
-                    <nav>
-                        <a href="#">Home</a>
-                        <a href="#">Cardápio</a>
-                        <a href="#">Criadores</a>
-                    </nav> 
-                </div>
-           </div>
-        </header>
-    </nav>
 
-    <!-- conteúdo do site -->
-    <div class="conteudo">
-        <div class="c-1">
-            conteudo
-        </div>
-        <div class="c-1">
-            conteudo
-        </div>
-        <div class="c-1">
-            conteudo
-        </div>
-    </div>
-        
-</body>
-</html>
+.novidades{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    color: rgb(128, 54, 5);
+    font-size: 50px;
+
+}
+.c-1{
+    margin: 30px 20px;
+    margin-left: 20px;
+    background-color: rgba(221, 118, 0, 0.521);
+    padding: 11%;
+    border: 2px red solid;
+    border-radius: 30px;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.c-1:hover {
+    background-color: rgba(221, 118, 0, 0.8); /* Muda a cor de fundo no hover */
+    transform: scale(1.05); /* Aumenta levemente o tamanho no hover */
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+}
+.c-2{
+    margin: 30px 20px;
+    padding: 80px;
+    background-color: rgba(0, 255, 255, 0.432);
+    border: 2px blue solid;
+    border-radius: 50px 30px 40px;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+}
