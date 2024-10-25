@@ -1,35 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- menu do site -->
+    <nav>
+        <header>
+           <div class="container">
+                <div class="logo">
+                    <img src="images/logo.jfif" alt="">
+                </div>
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-.container{
-    max-width: 1080px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    font-family: "Playfair Display", serif;
-}
-.logo img{
-    width: 100px;
-    border-radius: 50px;
-}
-.nome img{
-    width: 200px;
-    
-}
-.menu{
-    width: 50%;
-    margin-left: 600px;
-}
-.menu a{
-    text-decoration: none;
-}
+                <div class="nome"> 
+                    <img src="images/nome_cafeteri-removebg-preview.png" alt="">
+                </div>
 
-header{
-    background-color: #994D1C;
-    width: 100%;
-}
+                <div class="menu">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Cardápio</a>
+                        <a href="#">Criadores</a>
+                    </nav> 
+                </div>
+           </div>
+        </header>
+    </nav>
+
+    <!-- conteúdo do site -->
+    <div class="conteudo">
+        <div class="c-1">
+            conteudo
+        </div>
+        <div class="c-1">
+            conteudo
+        </div>
+        <div class="c-1">
+            conteudo
+        </div>
+    </div>
+        
+</body>
+</html>
